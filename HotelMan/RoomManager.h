@@ -1,8 +1,10 @@
 #pragma once
 #include "Room.h"
+
+const int floorInBuilding = 4;
 typedef struct
 {
-	Room rooms[4][20];
+	Room rooms[floorInBuilding][20];
 }RoomManager;
 
 

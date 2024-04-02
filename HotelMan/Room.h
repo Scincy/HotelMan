@@ -1,4 +1,5 @@
 #pragma once
+#include <stdbool.h>
 #include "ServiceList.h"
 typedef enum 
 {
@@ -14,7 +15,8 @@ typedef struct
 {
 	RoomNumber number;
 	RoomGrade grade;
-	ServiceList RoomService
+	ServiceList RoomService;
+	bool occupy;
 }Room;
 
 
