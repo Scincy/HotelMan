@@ -2,14 +2,15 @@
 #include <string.h>
 #include <stdio.h>
 #include "RoomService.h"
-char* GetRoomIDString(Room room)
-{
-	return sprintf(room.number.floor, "%d%d%d", room.number.floor, room.number.order / 10, room.number.order % 10);
-}
 
-char* GetRoomIDString(RoomNumber roomNum)
+char* GetRoomIDString(RoomNumber number)
 {
-	return sprintf(roomNum.floor, "%d%d%d", roomNum.floor, roomNum.order / 10, roomNum.order % 10);
+    char* roomNumber = (char*)malloc(5 * sizeof(char)); // 최대 4자리 수 + 널 종료 문자('\0')를 저장하기 위해 5개의 문자 공간 할당
+
+    // 방 번호를 문자열로 변환
+    sprintf(roomNumber, "%d%d%d", number.floor / 10, number.floor % 10, number.order);
+
+    return roomNumber;
 }
 
 int GetRoomRecept(Room* room)

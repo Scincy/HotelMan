@@ -22,7 +22,6 @@ typedef struct
 
 
 char* GetRoomIDString(RoomNumber room);
-char* GetRoomIDString(Room room);
 
 
 int GetRoomRecept(Room* room);
