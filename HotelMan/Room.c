@@ -2,7 +2,11 @@
 #include <string.h>
 #include <stdio.h>
 #include "RoomService.h"
-
+void Initialize(Room* room, RoomNumber newRoomNumber, RoomGrade newGrade)
+{
+    room->number = newRoomNumber;
+    room->grade = newGrade;
+}
 char* GetRoomIDString(RoomNumber number)
 {
     char* roomNumber = (char*)malloc(5 * sizeof(char)); // 최대 4자리 수 + 널 종료 문자('\0')를 저장하기 위해 5개의 문자 공간 할당

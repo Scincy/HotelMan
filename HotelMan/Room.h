@@ -20,7 +20,7 @@ typedef struct
 }Room;
 
 
-
+void Initialize(Room* room, RoomNumber roomNumber, RoomGrade grade);
 char* GetRoomIDString(RoomNumber room);
 
 
