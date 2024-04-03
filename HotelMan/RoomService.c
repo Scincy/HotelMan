@@ -6,3 +6,7 @@ void Initialize(RoomService* service, char* name, int price, int provideCount = 
 	service->privideCount = provideCount;
 	return;
 }
+RoomService IntToServiceStruct(int serviceID)
+{
+
+}

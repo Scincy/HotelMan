@@ -5,5 +5,6 @@ typedef struct
 	int privideCount;
 }RoomService;
 
-void Initialize(RoomService* service, char* name, int price, int provideCount = 1);
+void Initialize(RoomService* service, char* name, int price, int provideCount);
 
+RoomService IntToServiceStruct(int serviceID);

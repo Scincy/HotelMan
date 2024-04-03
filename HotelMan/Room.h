@@ -15,7 +15,7 @@ typedef struct
 {
 	RoomNumber number;
 	RoomGrade grade;
-	ServiceList RoomService;
+	ServiceList RoomServiceList;
 	bool occupy;
 }Room;
 

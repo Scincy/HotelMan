@@ -22,9 +22,6 @@ typedef enum
 	White = 15
 }TextColor;
 
-static RoomManager roomManager;
-
-
 void Initialize()
 {
     Initialize(&roomManager);
@@ -64,12 +61,37 @@ int GetIntInput()
 	return result;
 }
 
-void PrintMenu()
+void PrintMenu(int menuType)
 {
+    int roomSelection = printRoomSelection();
+    // int를 방 번호 구조체로 번역하기
 
 }
 
-void Show()
+int printRoomSelection()
+{
+    int input = 0;
+    do {
+        printf("\n방 선택: ");
+        input = GetIntInput();
+
+        if (input > 0 && input < 10000)
+        {
+            break;
+        }
+    } while (true);
+    
+    return input;
+    
+}
+
+void PrintRoomMenu(RoomNumber number)
+{
+    bool isOccupyed = false;
+
+}
+
+void ShowDisplay()
 {
 	//윗줄 그리기
 	printf("┌");
@@ -81,7 +103,7 @@ void Show()
 	
 	//층별 방 그리기
 	
-	for(int floor = (floorInBuilding-1); floor >= 0; floor--)
+	for(int floor = (FLOOR_IN_BUILDING-1); floor >= 0; floor--)
 	{
 		printf("│ %dF ", floor+1);
 		for (int i = 0; i < 20; i++)
@@ -93,7 +115,8 @@ void Show()
 				SetPrintColor(GetRoomColorForGrade(grade));
 			else SetPrintColor(White);
 			
-			printf("%4s %c ", GetRoomIDString(roomManager.rooms[floor][i]),roomIcon );
+            RoomNumber num = { floor, i };
+            printf("%4s %c ", GetRoomIDString(GetRoom(num).number), roomIcon);
 			if(i == 9)
 			{
 				printf("│\n│    ");
@@ -108,6 +131,11 @@ void Show()
 		printf("%c", floor == 0 ? "┘" : "┤");
 		
 	}
+
+    PrintMenu(0);
+    int userSelect = GetIntInput();
+
+
 
 }
 

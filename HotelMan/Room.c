@@ -46,13 +46,13 @@ int CalcRoomCharge(Room* room)
 int CalcServiceCharge(Room* room)
 {
 	int servicePriceTotal = 0;
-	int serviceCount = room->RoomService.count;
+	int serviceCount = room->RoomServiceList.count;
 	if (serviceCount <= 0) return 0;
 
 	for (int i = 0; i < serviceCount; i++)
 	{
-		int singleServicePrice = room->RoomService.items[i].servicePrice;
-		int provideCount = room->RoomService.items[i].privideCount;
+		int singleServicePrice = room->RoomServiceList.items[i].servicePrice;
+		int provideCount = room->RoomServiceList.items[i].privideCount;
 		servicePriceTotal += singleServicePrice * provideCount;
 	}
 

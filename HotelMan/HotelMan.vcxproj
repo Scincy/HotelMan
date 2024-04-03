@@ -134,6 +134,7 @@
     <ClCompile Include="HotelMan.c" />
     <ClCompile Include="Recept.c" />
     <ClCompile Include="RoomManager.c" />
+    <ClCompile Include="ServiceDataTable.c" />
     <ClCompile Include="ServiceList.c" />
     <ClCompile Include="Room.c" />
     <ClCompile Include="RoomService.c" />
@@ -141,9 +142,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArraySearchResult.h" />
+    <ClInclude Include="Display.h" />
     <ClInclude Include="Recept.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomManager.h" />
+    <ClInclude Include="ServiceDataTable.h" />
     <ClInclude Include="ServiceList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,5 +1,6 @@
 #include "RoomManager.h"
 
+
 RoomNumber ConvertStringToRoomNumber(const char* roomNumberStr)
 {
     RoomNumber result = {
@@ -16,23 +17,41 @@ Room* GetRoomsAtFloor(int floor)
 
 Room GetRoom(RoomNumber number)
 {
-    return roomManager.rooms[number.floor-1][number.order];
+    return roomManager.rooms[number.floor-1][number.order-1];
 }
 
-void AddService(RoomNumber number)
+void AddService(RoomNumber number, RoomService service)
 {
-    roomManager.rooms
+    AddRoomService(&(GetRoom(number).RoomServiceList), service);
+ 
 }
 
-void Initialize(RoomManager manager)
+RoomGrade configGradeAuto(int floor)
 {
-    for(int i = 0; i < floorInBuilding; i++)
+    switch (floor)
     {
-        for(int j = 0; j < roomsIn1floor; j++)
+    case 1:
+    case 0:
+        return C;
+    case 2:
+        return B;
+    case 3:
+        return A;
+    default:
+        return C;
+    }
+}
+
+
+void InitRoomManager()
+{
+    for(int i = 0; i < FLOOR_IN_BUILDING; i++)
+    {
+        for(int j = 0; j < ROOMS_IN_1_FLOOR; j++)
         {
-            RoomNumber number = {i,j};
-            RoomGrade grade = ;
-            Initialize(&manager.rooms[i][j], number, );
+            RoomNumber number = {i+1,j+1};
+            RoomGrade grade = configGradeAuto(i);
+            Initialize(&(roomManager.rooms[i][j]), number, grade);
         }
     }
 }
