@@ -18,12 +18,12 @@ const char* GetServiceNameStr(ServiceType type)
 {
 	switch (type)
 	{
-	case dinner: return "Àú³á½Ä»ç";
-	case lunch: return "Á¡½É½Ä»ç";
-	case healthcare: return "Çï½ºÀÌ¿ë";
-	case snack: return "´Ù°úÇÃ·¡ÅÍ";
-	case clean: return "Ã»¼Ò";
-	case extraPerson: return "Ãß°¡ÀÎ¿ø";
+	case dinner: return "ì €ë…ì‹ì‚¬";
+	case lunch: return "ì ì‹¬ì‹ì‚¬";
+	case healthcare: return "í—¬ìŠ¤ì´ìš©";
+	case snack: return "ë‹¤ê³¼í”Œë˜í„°";
+	case clean: return "ì²­ì†Œ";
+	case extraPerson: return "ì¶”ê°€ì¸ì›";
 	default:
 		return "";
 	}
