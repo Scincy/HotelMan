@@ -1,6 +1,6 @@
 #pragma once
 #include "ServiceList.h"
-/// ¸®½ºÆ® ÃÊ±âÈ­
+/// ë¦¬ìŠ¤íŠ¸ ì´ˆê¸°í™”
 void Initialize(ServiceList* array) {
     array->count = 0;
 
@@ -12,7 +12,7 @@ void Initialize(ServiceList* array, int capa) {
     array->items = (RoomService*)malloc(sizeof(RoomService) * array->count + 1);
 }
 
-/// Æ¯Á¤ ¼­ºñ½º°¡ ¸®½ºÆ®¿¡ ÀÌ¹Ì Á¸ÀçÇÏ°í ÀÖ´ÂÁö °Ë»çÇÕ´Ï´Ù.
+/// íŠ¹ì • ì„œë¹„ìŠ¤ê°€ ë¦¬ìŠ¤íŠ¸ì— ì´ë¯¸ ì¡´ì¬í•˜ê³  ìˆëŠ”ì§€ ê²€ì‚¬í•©ë‹ˆë‹¤.
 ArraySearchResult IsServiceExist(ServiceList* array, char* compareName)
 {
     ArraySearchResult result;
@@ -32,33 +32,33 @@ ArraySearchResult IsServiceExist(ServiceList* array, char* compareName)
     return result;
 }
 
-/// »õ·Î¿î ·ë ¼­ºñ½º Ãß°¡
+/// ìƒˆë¡œìš´ ë£¸ ì„œë¹„ìŠ¤ ì¶”ê°€
 void AddRoomService(ServiceList* array, RoomService item)
 {
-    //¼­ºñ½º°¡ ¹è¿­¿¡ ÀÌ¹Ì ÀÖ´ÂÁö °Ë»ç, ÀÖÀ¸¸é ¼­ºñ½º °¹¼ö Ãß°¡
+    //ì„œë¹„ìŠ¤ê°€ ë°°ì—´ì— ì´ë¯¸ ìˆëŠ”ì§€ ê²€ì‚¬, ìˆìœ¼ë©´ ì„œë¹„ìŠ¤ ê°¯ìˆ˜ ì¶”ê°€
     ArraySearchResult checking;
     Initialize(&checking);
     checking = IsServiceExist(array, item.serviceName);
-    if (checking.result)//Ãß°¡ ´ë»ó ¼­ºñ½º°¡ ÀÌ¹Ì µî·ÏµÈ ¼­ºñ½º¶ó¸é
+    if (checking.result)//ì¶”ê°€ ëŒ€ìƒ ì„œë¹„ìŠ¤ê°€ ì´ë¯¸ ë“±ë¡ëœ ì„œë¹„ìŠ¤ë¼ë©´
     {
-        //¼­ºñ½º Á¦°ø È½¼ö¸¸ ¿Ã¸®°í Á¾·á
+        //ì„œë¹„ìŠ¤ ì œê³µ íšŸìˆ˜ë§Œ ì˜¬ë¦¬ê³  ì¢…ë£Œ
         array[checking.foundIndex].count += item.privideCount;
         return;
     }
     array->items = (RoomService*)realloc(array->items, sizeof(RoomService) * (array->count + 1));
     array->items[array->count++] = item;
 }
-/// ·ë ¼­ºñ½º Á¦°Å
+/// ë£¸ ì„œë¹„ìŠ¤ ì œê±°
 bool RemoveRoomService(ServiceList* array, char* name, int count)
 {
     ArraySearchResult checking = IsServiceExist(array, name);
     if (!checking.result) return false;
 
-    // ·ë¼­ºñ½º¸¦ Á¦°ÅÇÒ ¶§ Á¦°Å´ë»óÀÇ ¾ç º¸´Ù ´õ ¸¹Àº ¼­ºñ½º°¡ ¿äÃ»µé¾î°¡ ÀÖÀ¸¸é?
+    // ë£¸ì„œë¹„ìŠ¤ë¥¼ ì œê±°í•  ë•Œ ì œê±°ëŒ€ìƒì˜ ì–‘ ë³´ë‹¤ ë” ë§ì€ ì„œë¹„ìŠ¤ê°€ ìš”ì²­ë“¤ì–´ê°€ ìˆìœ¼ë©´?
     if (array->items[checking.foundIndex].privideCount - count <= 0)
     {
-        //¿ÏÀü Á¦°Å, µ¤¾î ¾²´Â ¹æ½ÄÀ¸·Î Á¦°Å
-        for (int i = checking.foundIndex; i < array->count; i++)//Á¦°Å ´ë»ó À§Ä¡ÀÇ µÚÀÇ ¿ä¼Ò¸¦ ¾ÕÀ¸·Î ´ç°Ü¼­ Á¦°Å
+        //ì™„ì „ ì œê±°, ë®ì–´ ì“°ëŠ” ë°©ì‹ìœ¼ë¡œ ì œê±°
+        for (int i = checking.foundIndex; i < array->count; i++)//ì œê±° ëŒ€ìƒ ìœ„ì¹˜ì˜ ë’¤ì˜ ìš”ì†Œë¥¼ ì•ìœ¼ë¡œ ë‹¹ê²¨ì„œ ì œê±°
         {
             array->items[i] = array->items[i + 1];
         }
@@ -66,7 +66,7 @@ bool RemoveRoomService(ServiceList* array, char* name, int count)
     }
     else
     {
-        //¼­ºñ½º ¼ö ÁÙÀÌ±â
+        //ì„œë¹„ìŠ¤ ìˆ˜ ì¤„ì´ê¸°
         array->items[checking.foundIndex].privideCount -= count;
     }
 }

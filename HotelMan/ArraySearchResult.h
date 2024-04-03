@@ -3,11 +3,11 @@
 typedef struct {
     bool intialized;
     /// <summary>
-    /// °Ë»ö °á°ú°¡ ÂüÀÎÁö °ÅÁşÀÎÁö ¿©ºÎ
+    /// ê²€ìƒ‰ ê²°ê³¼ê°€ ì°¸ì¸ì§€ ê±°ì§“ì¸ì§€ ì—¬ë¶€
     /// </summary>
     bool result;
     /// <summary>
-    /// °â»öÇØ¼­ Ã£Àº À§Ä¡
+    /// ê²¸ìƒ‰í•´ì„œ ì°¾ì€ ìœ„ì¹˜
     /// </summary>
     int foundIndex;
 }ArraySearchResult;

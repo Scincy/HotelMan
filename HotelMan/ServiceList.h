@@ -10,21 +10,21 @@
 typedef struct {
     RoomService* items;
     /// <summary>
-    /// ÇöÀç ¸®½ºÆ®¿¡ Á¸ÀçÇÏ´Â ¼­ºñ½ºÀÇ °¹¼ö
+    /// í˜„ì¬ ë¦¬ìŠ¤íŠ¸ì— ì¡´ì¬í•˜ëŠ” ì„œë¹„ìŠ¤ì˜ ê°¯ìˆ˜
     /// </summary>
     int count;
 } ServiceList;
 
 
-/// ¸®½ºÆ® ÃÊ±âÈ­
+/// ë¦¬ìŠ¤íŠ¸ ì´ˆê¸°í™”
 void Initialize(ServiceList* array);
 void Initialize(ServiceList* array, int capa);
 
-/// Æ¯Á¤ ¼­ºñ½º°¡ ¸®½ºÆ®¿¡ ÀÌ¹Ì Á¸ÀçÇÏ°í ÀÖ´ÂÁö °Ë»çÇÕ´Ï´Ù.
+/// íŠ¹ì • ì„œë¹„ìŠ¤ê°€ ë¦¬ìŠ¤íŠ¸ì— ì´ë¯¸ ì¡´ì¬í•˜ê³  ìˆëŠ”ì§€ ê²€ì‚¬í•©ë‹ˆë‹¤.
 ArraySearchResult IsServiceExist(ServiceList* array, char* compareName);
 
-/// »õ·Î¿î ·ë ¼­ºñ½º Ãß°¡
+/// ìƒˆë¡œìš´ ë£¸ ì„œë¹„ìŠ¤ ì¶”ê°€
 void AddRoomService(ServiceList* array, RoomService item);
-/// ·ë ¼­ºñ½º Á¦°Å
+/// ë£¸ ì„œë¹„ìŠ¤ ì œê±°
 bool RemoveRoomService(ServiceList* array, char* name, int count);
 

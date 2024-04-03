@@ -30,11 +30,11 @@ void Initialize()
     Initialize(&roomManager);
 }
 
-//È­¸é¿¡¼­ ÇÑ ÁÙÀ» »èÁ¦
+//í™”ë©´ì—ì„œ í•œ ì¤„ì„ ì‚­ì œ
 void RemoveLine()
 {
 	printf("\033[1A\033[0J");
-	fflush(stdout);  // º¯°æ »çÇ×À» Áï½Ã Àû¿ë
+	fflush(stdout);  // ë³€ê²½ ì‚¬í•­ì„ ì¦‰ì‹œ ì ìš©
 }
 
 void SetPrintColor(TextColor color)
@@ -71,24 +71,24 @@ void PrintMenu()
 
 void Show()
 {
-	//À­ÁÙ ±×¸®±â
-	printf("¦£");
+	//ìœ—ì¤„ ê·¸ë¦¬ê¸°
+	printf("â”Œ");
 	for (int i = 0; i < 74; i++)
 	{
-		printf("¦¡");
+		printf("â”€");
 	}
-	printf("¦¤\n");
+	printf("â”\n");
 	
-	//Ãşº° ¹æ ±×¸®±â
+	//ì¸µë³„ ë°© ê·¸ë¦¬ê¸°
 	
 	for(int floor = (floorInBuilding-1); floor >= 0; floor--)
 	{
-		printf("¦¢ %dF ", floor+1);
+		printf("â”‚ %dF ", floor+1);
 		for (int i = 0; i < 20; i++)
 		{
 			RoomGrade grade = roomManager.rooms[floor][i].grade;
 			bool occupy = roomManager.rooms[floor][i].occupy;
-			char roomIcon = occupy ? "¡á" : "¡à";
+			char roomIcon = occupy ? "â– " : "â–¡";
 			if(!occupy)
 				SetPrintColor(GetRoomColorForGrade(grade));
 			else SetPrintColor(White);
@@ -96,16 +96,16 @@ void Show()
 			printf("%4s %c ", GetRoomIDString(roomManager.rooms[floor][i]),roomIcon );
 			if(i == 9)
 			{
-				printf("¦¢\n¦¢    ");
+				printf("â”‚\nâ”‚    ");
 			}
 		}
-		printf("¦¢\n");
+		printf("â”‚\n");
 
-		printf("%c", floor == 0 ? "¦¦" : "¦§");
+		printf("%c", floor == 0 ? "â””" : "â”œ");
 		for(int i = 0; i < 74; i++){
-			printf("¦¡");
+			printf("â”€");
 		}
-		printf("%c", floor == 0 ? "¦¥" : "¦©");
+		printf("%c", floor == 0 ? "â”˜" : "â”¤");
 		
 	}
 

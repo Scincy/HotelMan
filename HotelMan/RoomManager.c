@@ -3,5 +3,5 @@
 
 Room* GetRoomsAtFloor(RoomManager* manager, int floor)
 {
-	//TODO Æ¯Á¤ Ãş¿¡ ÀÖ´Â ¹æÀ» ¹İÈ¯ÇÏ´Â ÇÔ¼ö ±¸Çö
+	//TODO íŠ¹ì • ì¸µì— ìˆëŠ” ë°©ì„ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜ êµ¬í˜„
 }
