@@ -1,54 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HotelMan\\",
+  "WorkspaceRootPath": "C:\\HotelMan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\Display.c||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\Display.c||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\HotelMan.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|C:\\HotelMan\\HotelMan\\HotelMan.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\HotelMan.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\Display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\Display.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\RoomManager.c||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\RoomManager.c||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\ServiceList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\ServiceList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\Room.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\Room.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\Room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\Room.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\RoomService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\RoomService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\RoomService.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\RoomService.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\RoomManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\RoomManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\ServiceDataTable.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\ServiceDataTable.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|D:\\HotelMan\\HotelMan\\ServiceDataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B517C57-235A-44EF-B005-6957362BFB55}|HotelMan\\HotelMan.vcxproj|solutionrelative:HotelMan\\ServiceDataTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,163 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Room.h",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\Room.h",
-              "RelativeDocumentMoniker": "HotelMan\\Room.h",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\Room.h",
-              "RelativeToolTip": "HotelMan\\Room.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-03T03:13:33.245Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceList.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\ServiceList.c",
-              "RelativeDocumentMoniker": "HotelMan\\ServiceList.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\ServiceList.c",
-              "RelativeToolTip": "HotelMan\\ServiceList.c",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAACMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T04:07:53.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Room.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\Room.c",
-              "RelativeDocumentMoniker": "HotelMan\\Room.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\Room.c",
-              "RelativeToolTip": "HotelMan\\Room.c",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAADYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T04:07:06.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Display.h",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\Display.h",
-              "RelativeDocumentMoniker": "HotelMan\\Display.h",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\Display.h",
-              "RelativeToolTip": "HotelMan\\Display.h",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-03T04:00:39.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomService.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\RoomService.c",
-              "RelativeDocumentMoniker": "HotelMan\\RoomService.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\RoomService.c",
-              "RelativeToolTip": "HotelMan\\RoomService.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T03:56:17.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ServiceDataTable.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\ServiceDataTable.c",
-              "RelativeDocumentMoniker": "HotelMan\\ServiceDataTable.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\ServiceDataTable.c",
-              "RelativeToolTip": "HotelMan\\ServiceDataTable.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T03:25:59.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoomService.h",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\RoomService.h",
-              "RelativeDocumentMoniker": "HotelMan\\RoomService.h",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\RoomService.h",
-              "RelativeToolTip": "HotelMan\\RoomService.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-03T03:25:23.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HotelMan.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\HotelMan.c",
-              "RelativeDocumentMoniker": "HotelMan\\HotelMan.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\HotelMan.c",
-              "RelativeToolTip": "HotelMan\\HotelMan.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T03:22:42.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Display.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\Display.c",
-              "RelativeDocumentMoniker": "HotelMan\\Display.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\Display.c",
-              "RelativeToolTip": "HotelMan\\Display.c",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEsAAAASAAAA",
+              "Title": "HotelMan.c",
+              "DocumentMoniker": "C:\\HotelMan\\HotelMan\\HotelMan.c",
+              "RelativeDocumentMoniker": "HotelMan\\HotelMan.c",
+              "ToolTip": "C:\\HotelMan\\HotelMan\\HotelMan.c",
+              "RelativeToolTip": "HotelMan\\HotelMan.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T03:13:03.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoomManager.c",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\RoomManager.c",
-              "RelativeDocumentMoniker": "HotelMan\\RoomManager.c",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\RoomManager.c",
-              "RelativeToolTip": "HotelMan\\RoomManager.c",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADMAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-03T03:13:03.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RoomManager.h",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\RoomManager.h",
-              "RelativeDocumentMoniker": "HotelMan\\RoomManager.h",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\RoomManager.h",
-              "RelativeToolTip": "HotelMan\\RoomManager.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-03T03:10:13.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ServiceDataTable.h",
-              "DocumentMoniker": "D:\\HotelMan\\HotelMan\\ServiceDataTable.h",
-              "RelativeDocumentMoniker": "HotelMan\\ServiceDataTable.h",
-              "ToolTip": "D:\\HotelMan\\HotelMan\\ServiceDataTable.h",
-              "RelativeToolTip": "HotelMan\\ServiceDataTable.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-03T03:37:45.165Z",
+              "WhenOpened": "2024-04-07T09:23:29.716Z",
               "EditorCaption": ""
             }
           ]

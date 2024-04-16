@@ -1,30 +1,13 @@
 #pragma once
+#include <stdlib.h>
+#include <stdio.h>
 #include <stdbool.h>
-#include "ServiceList.h"
-typedef enum 
-{
-	A = 'A', B = 'B', C = 'C'
-}RoomGrade;
-typedef struct 
-{
-	int floor;
-	int order;
-}RoomNumber;
 
-typedef struct
+typedef struct Room
 {
-	RoomNumber number;
-	RoomGrade grade;
-	ServiceList RoomServiceList;
-	bool occupy;
+    bool occupy;
+    int grade;
+    int floorLevel;
+    int story;
 }Room;
-
-
-void Initialize(Room* room, RoomNumber roomNumber, RoomGrade grade);
-char* GetRoomIDString(RoomNumber room);
-
-
-int GetRoomRecept(Room* room);
-
-int CalcRoomCharge(Room* room);
-int CalcServiceCharge(Room* room);
+char* GetRoomNumber(Room room);

@@ -1,61 +1,22 @@
+
 #include "Room.h"
-#include <string.h>
-#include <stdio.h>
-#include "RoomService.h"
-void Initialize(Room* room, RoomNumber newRoomNumber, RoomGrade newGrade)
-{
-    room->number = newRoomNumber;
-    room->grade = newGrade;
+char* GetRoomNumber(Room room) {
+    if (room.floorLevel >= 100 || room.story >= 100 || room.floorLevel <= 0 || room.story <= 0)
+    {
+        printf("\n\n----------");
+        printf("¹æ ¼³Á¤ÀÌ Àß¸øµÊ! ÀÌ»óÇÑ ¹øÈ£¸¦ °®°í ÀÖ¾î¿ä\n");
+        printf("----------\n");
+    }
+
+    char* roomNumStr = (char*)malloc(5 * sizeof(char)); // 4ÀÚ¸® ¹æ ¹øÈ£ + NULL Á¾·á ¹®ÀÚ
+
+    if (!roomNumStr) {
+        printf("¸Þ¸ð¸® ÇÒ´ç ½ÇÆÐ\n");
+        return NULL;
+    }
+
+    // Ãþ¼ö°¡ 10 ¹Ì¸¸ÀÏ °æ¿ì 10ÀÇ ÀÚ¸®¸¦ °ø¹éÀ¸·Î, ±×·¸Áö ¾ÊÀ¸¸é Á¤¼ö·Î Æ÷¸ËÆÃ
+    sprintf(roomNumStr, "%c%d%02d", (room.floorLevel < 10 ? ' ' : '0' + room.floorLevel / 10), room.floorLevel % 10, room.story);
+
+    return roomNumStr;
 }
-char* GetRoomIDString(RoomNumber number)
-{
-    char* roomNumber = (char*)malloc(5 * sizeof(char)); // ìµœëŒ€ 4ìžë¦¬ ìˆ˜ + ë„ ì¢…ë£Œ ë¬¸ìž('\0')ë¥¼ ì €ìž¥í•˜ê¸° ìœ„í•´ 5ê°œì˜ ë¬¸ìž ê³µê°„ í• ë‹¹
-
-    // ë°© ë²ˆí˜¸ë¥¼ ë¬¸ìžì—´ë¡œ ë³€í™˜
-    sprintf(roomNumber, "%d%d%d", number.floor / 10, number.floor % 10, number.order);
-
-    return roomNumber;
-}
-
-int GetRoomRecept(Room* room)
-{
-	return CalcRoomCharge(room) + CalcServiceCharge(room);
-}
-
-int CalcRoomCharge(Room* room)
-{
-	int roomprice = 0;
-
-	switch (room->grade)
-	{
-	case A:
-		roomprice = 100000;
-		break;
-	case B:
-		roomprice = 80000;
-	case C:
-		roomprice = 60000;
-		break;
-	default:
-		roomprice = 10000;
-		break;
-	}
-
-	return roomprice;
-}
-int CalcServiceCharge(Room* room)
-{
-	int servicePriceTotal = 0;
-	int serviceCount = room->RoomServiceList.count;
-	if (serviceCount <= 0) return 0;
-
-	for (int i = 0; i < serviceCount; i++)
-	{
-		int singleServicePrice = room->RoomServiceList.items[i].servicePrice;
-		int provideCount = room->RoomServiceList.items[i].privideCount;
-		servicePriceTotal += singleServicePrice * provideCount;
-	}
-
-	return servicePriceTotal;
-}
-
